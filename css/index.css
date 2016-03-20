@@ -1,0 +1,101 @@
+
+body{
+	background: #000;
+	margin: 0;
+	padding: 0
+}
+.box{
+	width: 900px;
+	margin: 0 auto;
+	margin-top:80px;
+	position: relative;
+}
+#score{
+	width: 80px;
+	height:120px;
+	/*background: #a7ff51;*/
+    background-image:url(../images/defen.png);
+    background-size: 120px 120px;
+	/*border: 1px solid #000;*/
+	position: absolute;
+	left:20%;
+	top: -15%;
+	margin-top: -10px;
+	z-index: 2;
+	margin-left:10px;
+	color:white;
+	font-weight: 700;
+	text-align:left center;
+	line-height:130px;
+	font-size: 15px;
+	
+}
+#start{
+	z-index: 2;
+	width: 80px;
+	height:80px;
+	/*background: #a7ff51;*/
+	background-image:url(../images/start.png);
+	background-size: 80px 80px;
+	/*border: 1px solid#000;*/
+	position: absolute;
+    right: 20%;
+	top: -8%;
+	text-align: center;
+	margin-top: -30px;
+	line-height: 50px;
+	cursor: default;
+}
+#end{
+	z-index: 2;
+	width: 80px;
+	height:80px;
+	/*background: #a7ff51;*/
+	background-image:url(../images/stop.png);
+	background-size: 80px 80px;
+	/*border: 1px solid#000;*/
+	position: absolute;
+    right:45%;
+	top: -8%;
+	text-align: center;
+	margin-top: -30px;
+	line-height: 50px;
+	cursor: default;
+}
+#sence{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	border: 1px solid #000;
+	background: url(../images/weiba.png);
+}
+.block{
+	width: 29px;
+	height:29px;
+	background-image: url(../images/be.png);
+	background-size: 29px 29px;
+	float: left;
+	margin-right:1px;
+	margin-bottom: 1px;
+}
+
+
+#sence::after{
+  content: ' ';
+  clear: both;
+  display: block;
+  line-height: 0;
+  font-size:0;
+}
+@media (max-width:640px) {
+  #sence{
+    width: 320px;
+    height: 320px;
+    background: url(../images/weiba.png);
+  }
+  #sence .block{
+    width: 15px;
+    height: 15px;
+    float: left;
+    background-image: url(../images/be.png);
+}
